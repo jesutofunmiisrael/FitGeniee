@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #0f0f1a; 
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c79bff; 
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #d3cee5;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn {
+  background: transparent;
+  color: #d0cbe6;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, #9b5cff, #ff67b0);
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .header {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signup-btn {
+    padding: 8px 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
